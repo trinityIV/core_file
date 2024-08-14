@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DiabloIV Core.exe" version="1.0.0.0" publicKeyToken="01966fb4d8e589d2" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="icons8-diablo-4-128.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DiabloIV Core" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="DiabloIV Core.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options de manifeste UAC
+          Pour changer le niveau du contrôle de compte d'utilisateur Windows, remplacez le
+          nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Pour utiliser la virtualisation des fichiers et du Registre afin d'assurer
+         une compatibilité ascendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DiabloIV Core.exe" size="394208">
+      <assemblyIdentity name="DiabloIV Core" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CtCxpyWoLA4XqoEqQlHODpbjO/iWWJWSeXCJr8M1cV0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Core.dll" size="577616">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Core" version="1.0.2651.64" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rYtVL68rMqqC7TCVbv7OV7+LsfKD/Wymo2Q/Vgh2ai4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.WinForms.dll" size="38472">
+      <assemblyIdentity name="Microsoft.Web.WebView2.WinForms" version="1.0.2651.64" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YOeceVqk5KXZ/TrqSUpA+Ub8mNSKXuZdBc3NOrlY45s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Wpf.dll" size="82520">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Wpf" version="1.0.2651.64" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>v+sudI/334KIIHclFl7RJjXQwENneNBnHptC6K4zvng=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DiabloIV Core.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oWu74zvPy0v3fB+cE0VM1nicyfA0TvANUiqy8USokWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icons8-diablo-4-128.ico" size="191599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>US2SEWnfqc6kMi2oyv85Ms6sWxFKJSD60YSO8RbPGnU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\WebView2Loader.dll" size="165440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/0kN0Q7E58kuCcRDydvcD0RUuEGzg8RITRqD/jP+jM4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-8OLANVN\pirat" issuerKeyHash="14a0e6b4887b9ce2570e5ec7d1cc9e56b9d0e527" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8P2e5Yc4CNk2zWTWNTQxq3IWx2YM3+ZfZJl4TsoqDhg=</DigestValue></Reference></SignedInfo><SignatureValue>dNI8f32f3YYMN++0VD3I4YxH+jOzD84hf5xthKkgva1yqhxEro+quBXSvMtvNr8lxoSk1qEdqRmDjAXsGl+aML/PWGlgPcBI857lup9o7bZe4fiJCR31i2K1b5ImimkFmRxsUGU+3rAKBj2rS/2x9Vs6kZbeRlFqLB/BTbQ5QSw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3PUheH6qo5NGg1VMJWxVoPj2TncjxiqOOTSZDASP9J8vcar2tVwqAFr/s2j/qi2WOJ66tJDAR7LAql8Sx/WNH1xZ/n8Xa8TQ6c6BI1Q9B50Ge8To7NrjdnlHxEa3QMn1uXh38/SX+0PzsGtZlzyPq0iHTbun7lY0kNsjG4h3KsE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="180e2aca4e7899645fe6df0c66c71672ab313435d664cd36d9083887e59efdf0" Description="" Url=""><as:assemblyIdentity name="DiabloIV Core.exe" version="1.0.0.0" publicKeyToken="01966fb4d8e589d2" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-8OLANVN\pirat</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DjwfnjIWAtGf0xp4tjYwn0rgKrw19g9Yvwai4Vif77s=</DigestValue></Reference></SignedInfo><SignatureValue>KF4XPM5uQ3P7YhBoMPB7kTg3xoxEWEFfUce4Su3f/ntZeNPGUjkE2ll4843Pxy6YKWq3JW9YvWat2aJIgoWSHKaMZBXLtkuda2eVGea/8fFVVImyQs3cxKS/Nt3ZTBldiFXKPzzhuKvNoVIXCNTSeOkhJXLymc3zohbwUHaLYHQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3PUheH6qo5NGg1VMJWxVoPj2TncjxiqOOTSZDASP9J8vcar2tVwqAFr/s2j/qi2WOJ66tJDAR7LAql8Sx/WNH1xZ/n8Xa8TQ6c6BI1Q9B50Ge8To7NrjdnlHxEa3QMn1uXh38/SX+0PzsGtZlzyPq0iHTbun7lY0kNsjG4h3KsE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQYo9VPcSv5L1N90GmHpr4MjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgATwBMAEEATgBWAE4AXABwAGkAcgBhAHQwHhcNMjQwODE0MTYxNDQ0WhcNMjUwODE0MjIxNDQ0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgATwBMAEEATgBWAE4AXABwAGkAcgBhAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANz1IXh+qqOTRoNVTCVsVaD49k53I8Yqjjk0mQwEj/SfL3Gq9rVcKgBa/7No/6otljieurSQwEeywKpfEsf1jR9cWf5/F2vE0OnOgSNUPQedBnvE6Oza43Z5R8RGt0DJ9bl4d/P0l/tD87BrWZc8j6tIh027p+5WNJDbIxuIdyrBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEATHadITSd1yO52pR2pdNMnTdarWa0tulxm97turlo37P3CZVD4K51g5PDiBNA8nmcRF0XkDTEJEtHpNbiahYq9mnEs6HVdQypPjNywMQu8BjYxQWQ8cgEdT6GWv96PY2qLFyHp163upkQ+oP7USNN4Hb0fKhqiRaOLfS2m/mv500=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
